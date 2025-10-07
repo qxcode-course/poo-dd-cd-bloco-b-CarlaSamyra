@@ -4,10 +4,10 @@ class Chinela:
     
     def set_tamanho (self, numero: int) -> bool:
         if numero%2 != 0:
-            print ("Numero inválido, não existe valor impar")
+            print ("Numero inválido, não é permitido um valor impar!")
             return False
         if numero < 20 or numero > 50:
-            print("Numero inválido")
+            print("Tamanho inválido!")
             return False
         self.__tamanho = numero
         return True
@@ -20,7 +20,7 @@ def main():
         chinela = Chinela(0)
         numero: int = int(input("Diga o tamanho da sua chinela "))
         if chinela.set_tamanho(numero):
-            print("Tamanho correto")
+            print("Tamanho correto e dentro dos padrões!")
             break
     
 main()

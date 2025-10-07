@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_15-39-02",
+            "content": "@@ -1,630 +0,0 @@\n-class Camisa:%0A    def __init__ (self, tamanho: str):%0A        self.__tamanho = tamanho%0A%0A    def get_tamanho (self):%0A        return self.__tamanho%0A    %0A    def set_tamanho (self, numero: str):%0A        if numero != %22PP%22 or numero != %22P%22 or numero != %22M%22 or numero != %22G%22 or numero != %22GG%22 or numero != %22XG%22:%0A            print(%22Tamanho de roupa inv%C3%A1lido!%22)%0A            return False%0A        else:%0A            print (%22Tamanho v%C3%A1lido!%22)%0A    %0A%0Adef main():%0A    camisa: Camisa = Camisa()%0A    while True:%0A        numero: int = int(input(%22Informe o tamanho da sua camisa: %22))%0A        if camisa.set_tamanho(numero): %0A            break%0Amain() %0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-07_15-59-29",
+            "content": "@@ -71,19 +71,23 @@\n manho = \n-%22 %22\n+tamanho\n %0A%0A    de\n@@ -383,214 +383,70 @@\n     \n-if numero == %22PP%22 or numero == %22P%22 or numero == %22M%22 or numero == %22G%22 or numero == %22GG%22 or numero == %22XG%22:%0A            print (%22Tamanho v%C3%A1lido!%22)%0A            return True%0A    %0A%0Adef main():%0A    while True:%0A    \n+else:%0A            print (%22Tamanho v%C3%A1lido!%22)%0A    %0A%0Adef main():%0A\n     \n@@ -473,12 +473,25 @@\n isa(\n-%22 %22)\n+)%0A    while True:\n %0A   \n@@ -507,14 +507,17 @@\n ro: \n-str = \n+int = int\n (inp\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-07_16-04-10",
+            "content": "@@ -509,26 +509,16 @@\n Tamanho \n- de roupa \n v%C3%A1lido!%22\n@@ -591,16 +591,24 @@\n   camisa\n+: Camisa\n  = Camis\n@@ -725,46 +725,8 @@\n ): %0A\n-            print (%22Tamanho v%C3%A1lido!%22)%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-07_16-06-42",
+            "content": "@@ -624,20 +624,22 @@\n         \n-line\n+numero\n : str = \n@@ -717,12 +717,14 @@\n nho(\n-line\n+numero\n ): %0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_16-07-18",
+            "content": "@@ -392,16 +392,103 @@\n  == %22PP%22\n+ or numero == %22P%22 or numero == %22M%22 or numero == %22G%22 or numero == %22GG%22 or numero == %22XG%22\n :%0A      \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_16-07-52",
+            "content": "@@ -71,23 +71,19 @@\n manho = \n-tamanho\n+%22 %22\n %0A%0A    de\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_16-09-02",
+            "content": "@@ -383,12 +383,25 @@\n     \n-else\n+if numero == %22PP%22\n :%0A  \n@@ -541,22 +541,20 @@\n         \n-numero\n+line\n : str = \n@@ -628,22 +628,20 @@\n tamanho(\n-numero\n+line\n ): %0A    \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_16-09-53",
+            "content": "@@ -347,49 +347,8 @@\n ido!\n- Valores permitidos: PP, P, M, G, GG e XG\n %22)%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_16-11-10",
+            "content": "@@ -560,9 +560,11 @@\n isa(\n-0\n+%22 %22\n )%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_16-35-13",
+            "content": "@@ -210,19 +210,18 @@\n != %22PP%22 \n-and\n+or\n  numero \n@@ -227,19 +227,18 @@\n  != %22P%22 \n-and\n+or\n  numero \n@@ -244,19 +244,18 @@\n  != %22M%22 \n-and\n+or\n  numero \n@@ -261,19 +261,18 @@\n  != %22G%22 \n-and\n+or\n  numero \n@@ -283,11 +283,10 @@\n GG%22 \n-and\n+or\n  num\n@@ -560,10 +560,9 @@\n isa(\n-%22%22\n+0\n )%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_16-38-35",
+            "content": "class Camisa:\n    def __init__ (self, tamanho: str):\n        self.__tamanho = tamanho\n\n    def get_tamanho (self):\n        return self.__tamanho\n    \n    def set_tamanho (self, numero: str):\n        if numero != \"PP\" and numero != \"P\" and numero != \"M\" and numero != \"G\" and numero != \"GG\" and numero != \"XG\":\n            print(\"Tamanho de roupa inv\u00e1lido! Valores permitidos: PP, P, M, G, GG e XG\")\n            return False\n        else:\n            print (\"Tamanho  de roupa v\u00e1lido!\")\n            return True\n    \n\ndef main():\n    while True:\n        camisa = Camisa(\"\")\n        numero: str = (input(\"Informe o tamanho da sua camisa: \"))\n        if camisa.set_tamanho(numero): \n            print (\"Tamanho v\u00e1lido!\")\n            break\nmain() \n",
+            "lines": "24"
+        }
+    ]
+}

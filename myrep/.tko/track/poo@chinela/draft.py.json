@@ -22,7 +22,27 @@
         },
         {
             "label": "2025-10-06_17-11-55",
-            "content": "class Chinela: \n    def __init__ (self, tamanho: int):\n        self.__tamanho = tamanho \n    \n    def set_tamanho (self, numero: int) -> bool:\n        if numero%2 != 0:\n            print (\"numero inv\u00e1lido, n\u00e3o existe valor impar\")\n            return False\n        if numero < 20 or numero > 50:\n            print(\"numero inv\u00e1lido\")\n            return False\n        self.__tamanho = numero\n        return True\n\n    def get_tamanho (self):\n        return self.__tamanho \n\ndef main():\n    while True:\n        chinela = Chinela(0)\n        numero: int = int(input(\"Diga o tamanho da sua chinela \"))\n        if chinela.set_tamanho(numero):\n            print(\"tamanho correto\")\n            break\n    \nmain()",
+            "content": "@@ -182,17 +182,17 @@\n print (%22\n-N\n+n\n umero in\n@@ -311,9 +311,9 @@\n nt(%22\n-N\n+n\n umer\n@@ -646,17 +646,17 @@\n  print(%22\n-T\n+t\n amanho c\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-07_15-39-27",
+            "content": "@@ -207,22 +207,14 @@\n n%C3%A3o \n-%C3%A9 permitido um\n+existe\n  val\n@@ -307,22 +307,21 @@\n  print(%22\n-Tamanh\n+Numer\n o inv%C3%A1li\n@@ -528,20 +528,22 @@\n         \n-line\n+numero\n : int = \n@@ -622,12 +622,14 @@\n nho(\n-line\n+numero\n ):%0A \n@@ -665,29 +665,8 @@\n reto\n- e dentro dos padr%C3%B5es\n %22)%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-07_15-49-32",
+            "content": "@@ -526,16 +526,17 @@\n Chinela(\n+0\n )%0A      \n@@ -537,22 +537,20 @@\n         \n-numero\n+line\n : int = \n@@ -625,22 +625,20 @@\n tamanho(\n-numero\n+line\n ):%0A     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-07_16-14-14",
+            "content": "@@ -526,17 +526,16 @@\n Chinela(\n-0\n )%0A      \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-07_16-32-16",
+            "content": "class Chinela: \n    def __init__ (self, tamanho: int):\n        self.__tamanho = tamanho \n    \n    def set_tamanho (self, numero: int) -> bool:\n        if numero%2 != 0:\n            print (\"Numero inv\u00e1lido, n\u00e3o \u00e9 permitido um valor impar\")\n            return False\n        if numero < 20 or numero > 50:\n            print(\"Tamanho inv\u00e1lido\")\n            return False\n        self.__tamanho = numero\n        return True\n\n    def get_tamanho (self):\n        return self.__tamanho \n\ndef main():\n    while True:\n        chinela = Chinela(0)\n        numero: int = int(input(\"Diga o tamanho da sua chinela \"))\n        if chinela.set_tamanho(numero):\n            print(\"Tamanho correto e dentro dos padr\u00f5es\")\n            break\n    \nmain()",
             "lines": "26"
         }
     ]
