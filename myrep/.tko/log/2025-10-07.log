@@ -46,3 +46,28 @@
 2025-10-07 16:40:53, MOVE, v:1, k:poo@chinela, mode:PICK
 2025-10-07 16:40:54, EXEC, v:1, k:poo@chinela, mode:FREE
 2025-10-07 16:41:32, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-07 16:49:49, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 16:49:50, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:9
+2025-10-07 16:49:51, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-07 16:49:55, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 16:49:56, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-07 16:52:00, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 16:52:01, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:17
+2025-10-07 16:54:57, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:27
+2025-10-07 16:57:33, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:34
+2025-10-07 17:07:10, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 17:07:11, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:34
+2025-10-07 17:07:24, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:34
+2025-10-07 17:07:42, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:34
+2025-10-07 17:08:03, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 17:08:04, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-07 17:08:38, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 17:10:05, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 17:10:06, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:34
+2025-10-07 17:14:33, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 17:18:32, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 17:19:35, EXEC, v:1, k:roupa@py, mode:FREE, size:34
+2025-10-07 17:19:52, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 17:21:17, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 17:21:18, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100, size:34
+2025-10-07 17:21:20, MOVE, v:1, k:poo@roupa, mode:BACK

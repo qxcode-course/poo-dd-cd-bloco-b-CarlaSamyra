@@ -2,8 +2,53 @@
     "patches": [
         {
             "label": "2025-10-07_16-40-39",
-            "content": "",
+            "content": "@@ -1,161 +0,0 @@\n-class Roupa:%0A    def __init__ (self, tamanho: str):%0A        self.__tamanho: str = tamanho %0A    %0Adef main():%0A    roupa = Roupa(%22%22)%0A    while True:%0A        %0Amain()\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-07_16-49-50",
+            "content": "@@ -151,252 +151,8 @@\n     \n-line = input()%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        print (%22$%22 + line)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(roupa)%0A        else: %0A            print(%22fail: comando invalido%22)\n %0Amai\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-07_16-52-01",
+            "content": "@@ -88,168 +88,8 @@\n ho %0A\n-    %0A    def get_tamanho (self):%0A        return self.__tamanho%0A    %0A    def set_tamanho (self, numero: str):%0A        if numero != %22PP%22 and numero != %22PP%22 and %0A%0A\n     \n@@ -337,117 +337,8 @@\n pa)%0A\n-        elif args%5B0%5D == %22size%22:%0A            numero: str = str(args%5B1%5D)%0A            roupa.set_tamanho(numero)%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-10-07_16-54-57",
+            "content": "@@ -87,75 +87,8 @@\n nho \n-%0A%0A    def __str__ (self):%0A        return f%22size (%7Bself.__tamanho%7D)%22\n %0A   \n@@ -195,16 +195,8 @@\n str)\n- -%3E bool\n :%0A  \n@@ -239,190 +239,15 @@\n = %22P\n+P\n %22 and \n-numero != %22M%22 and numero != %22G%22 and numero != %22GG%22 and numero != %22XG%22:%0A            print (%22Valor inv%C3%A1lido, tente PP, P, M, G, GG ou XG%22)%0A            return False%0A        else:%0A\n %0A%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-07_16-57-33",
+            "content": "@@ -412,25 +412,25 @@\n  (%22Valor inv\n-a\n+%C3%A1\n lido, tente \n@@ -496,31 +496,9 @@\n se:%0A\n-            return True\n+%0A\n %0A   \n@@ -688,34 +688,32 @@\n   break%0A        \n-el\n if args%5B0%5D == %22s\n@@ -814,16 +814,16 @@\n rgs%5B1%5D)%0A\n+\n         \n@@ -856,25 +856,8 @@\n ro)%0A\n-                %0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-07_17-07-11",
+            "content": "@@ -130,17 +130,16 @@\n n f%22size\n-:\n  (%7Bself.\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-07_17-07-24",
+            "content": "@@ -408,22 +408,16 @@\n print (%22\n-fail: \n Valor in\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-07_17-07-42",
+            "content": "@@ -503,45 +503,8 @@\n se:%0A\n-            self.__tamanho = numero %0A\n     \n@@ -883,16 +883,33 @@\n numero)%0A\n+                %0A\n         \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-07_17-10-06",
+            "content": "@@ -427,9 +427,9 @@\n  inv\n-%C3%A1\n+a\n lido\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-07_17-21-18",
+            "content": "class Roupa:\n    def __init__ (self, tamanho: str):\n        self.__tamanho: str = tamanho \n\n    def __str__ (self):\n        return f\"size: ({self.__tamanho})\"\n    \n    def get_tamanho (self):\n        return self.__tamanho\n    \n    def set_tamanho (self, numero: str) -> bool:\n        if numero != \"PP\" and numero != \"P\" and numero != \"M\" and numero != \"G\" and numero != \"GG\" and numero != \"XG\":\n            print (\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n            return False\n        else:\n            self.__tamanho = numero \n            return True\n    \ndef main():\n    roupa = Roupa(\"\")\n    while True:\n        line = input()\n        args: list[str] = line.split(\" \")\n        print (\"$\" + line)\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(roupa)\n        elif args[0] == \"size\":\n            numero: str = str(args[1])\n            roupa.set_tamanho(numero)\n        else: \n            print(\"fail: comando invalido\")\nmain()",
+            "lines": "34"
         }
     ]
 }
