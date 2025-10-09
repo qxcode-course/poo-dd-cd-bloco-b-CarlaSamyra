@@ -52,8 +52,23 @@
         },
         {
             "label": "2025-10-07_16-38-35",
-            "content": "class Camisa:\n    def __init__ (self, tamanho: str):\n        self.__tamanho = tamanho\n\n    def get_tamanho (self):\n        return self.__tamanho\n    \n    def set_tamanho (self, numero: str):\n        if numero != \"PP\" and numero != \"P\" and numero != \"M\" and numero != \"G\" and numero != \"GG\" and numero != \"XG\":\n            print(\"Tamanho de roupa inv\u00e1lido! Valores permitidos: PP, P, M, G, GG e XG\")\n            return False\n        else:\n            print (\"Tamanho  de roupa v\u00e1lido!\")\n            return True\n    \n\ndef main():\n    while True:\n        camisa = Camisa(\"\")\n        numero: str = (input(\"Informe o tamanho da sua camisa: \"))\n        if camisa.set_tamanho(numero): \n            print (\"Tamanho v\u00e1lido!\")\n            break\nmain() \n",
+            "content": "@@ -502,16 +502,21 @@\n urn True\n+%0A    \n %0A%0Adef ma\n@@ -672,16 +672,54 @@\n mero): %0A\n+            print (%22Tamanho v%C3%A1lido!%22)%0A\n         \n",
             "lines": "24"
+        },
+        {
+            "label": "2025-10-09_11-11-41",
+            "content": "@@ -206,26 +206,27 @@\n ero \n-=\n+!\n = %22PP%22 \n-or\n+and\n  numero \n == %22\n@@ -225,25 +225,26 @@\n ero \n-=\n+!\n = %22P%22 \n-or\n+and\n  numero \n == %22\n@@ -243,25 +243,26 @@\n ero \n-=\n+!\n = %22M%22 \n-or\n+and\n  numero \n == %22\n@@ -261,25 +261,26 @@\n ero \n-=\n+!\n = %22G%22 \n-or\n+and\n  numero \n == %22\n@@ -279,26 +279,27 @@\n ero \n-=\n+!\n = %22GG%22 \n-or\n+and\n  numero \n == %22\n@@ -294,17 +294,17 @@\n  numero \n-=\n+!\n = %22XG%22:%0A\n@@ -343,17 +343,85 @@\n upa \n+in\n v%C3%A1lido!\n-%22)\n+ Valores permitidos: PP, P, M, G, GG e XG%22)%0A            return False\n %0A   \n@@ -451,32 +451,33 @@\n print (%22Tamanho \n+ \n de roupa inv%C3%A1lid\n@@ -473,60 +473,41 @@\n upa \n-in\n v%C3%A1lido!\n- Valores permitidos: PP, P, M, G, GG e XG%22)\n+%22)%0A            return True\n %0A%0Ade\n@@ -568,20 +568,22 @@\n         \n-line\n+numero\n : str = \n@@ -661,14 +661,17 @@\n nho(\n-line\n+numero\n ):\n+ \n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-09_11-15-25",
+            "content": "@@ -348,32 +348,8 @@\n !%22)%0A\n-            return True%0A\n     \n@@ -451,33 +451,8 @@\n XG%22)\n-%0A            return False\n %0A%0Ade\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-09_11-16-15",
+            "content": "class Camisa:\n    def __init__ (self, tamanho: str):\n        self.__tamanho = tamanho\n\n    def get_tamanho (self):\n        return self.__tamanho\n    \n    def set_tamanho (self, numero: str):\n        if numero == \"PP\" or numero == \"P\" or numero == \"M\" or numero == \"G\" or numero == \"GG\" or numero == \"XG\":\n            print(\"Tamanho de roupa v\u00e1lido!\")\n            return True\n        else:\n            print (\"Tamanho de roupa inv\u00e1lido! Valores permitidos: PP, P, M, G, GG e XG\")\n            return False\n\ndef main():\n    while True:\n        camisa = Camisa(\"\")\n        line: str = (input(\"Informe o tamanho da sua camisa: \"))\n        if camisa.set_tamanho(line):\n            break\nmain() \n",
+            "lines": "22"
         }
     ]
 }

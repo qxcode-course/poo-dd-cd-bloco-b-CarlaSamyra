@@ -6,17 +6,17 @@ class Camisa:
         return self.__tamanho
     
     def set_tamanho (self, numero: str):
-        if numero != "PP" and numero != "P" and numero != "M" and numero != "G" and numero != "GG" and numero != "XG":
-            print("Tamanho de roupa inválido! Valores permitidos: PP, P, M, G, GG e XG")
-            return False
-        else:
-            print ("Tamanho  de roupa válido!")
+        if numero == "PP" or numero == "P" or numero == "M" or numero == "G" or numero == "GG" or numero == "XG":
+            print("Tamanho de roupa válido!")
             return True
+        else:
+            print ("Tamanho de roupa inválido! Valores permitidos: PP, P, M, G, GG e XG")
+            return False
 
 def main():
     while True:
         camisa = Camisa("")
-        numero: str = (input("Informe o tamanho da sua camisa: "))
-        if camisa.set_tamanho(numero): 
+        line: str = (input("Informe o tamanho da sua camisa: "))
+        if camisa.set_tamanho(line):
             break
 main() 

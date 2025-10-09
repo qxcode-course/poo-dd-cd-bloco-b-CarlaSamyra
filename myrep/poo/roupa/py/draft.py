@@ -8,7 +8,7 @@ class Roupa:
     def get_tamanho (self):
         return self.__tamanho
     
-    def set_tamanho (self, numero: str) -> bool:
+    def set_tamanho (self, numero: str):
         if numero != "PP" and numero != "P" and numero != "M" and numero != "G" and numero != "GG" and numero != "XG":
             print ("fail: Valor inválido, tente PP, P, M, G, GG ou XG")
             return False
