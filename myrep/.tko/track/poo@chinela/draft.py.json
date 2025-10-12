@@ -42,7 +42,12 @@
         },
         {
             "label": "2025-10-07_16-32-16",
-            "content": "class Chinela: \n    def __init__ (self, tamanho: int):\n        self.__tamanho = tamanho \n    \n    def set_tamanho (self, numero: int) -> bool:\n        if numero%2 != 0:\n            print (\"Numero inv\u00e1lido, n\u00e3o \u00e9 permitido um valor impar\")\n            return False\n        if numero < 20 or numero > 50:\n            print(\"Tamanho inv\u00e1lido\")\n            return False\n        self.__tamanho = numero\n        return True\n\n    def get_tamanho (self):\n        return self.__tamanho \n\ndef main():\n    while True:\n        chinela = Chinela(0)\n        numero: int = int(input(\"Diga o tamanho da sua chinela \"))\n        if chinela.set_tamanho(numero):\n            print(\"Tamanho correto e dentro dos padr\u00f5es\")\n            break\n    \nmain()",
+            "content": "@@ -229,17 +229,16 @@\n or impar\n-!\n %22)%0A     \n@@ -331,17 +331,16 @@\n inv%C3%A1lido\n-!\n %22)%0A     \n@@ -691,17 +691,16 @@\n  padr%C3%B5es\n-!\n %22)%0A     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-12_20-14-04",
+            "content": "class Chinela: \n    def __init__ (self, tamanho: int):\n        self.__tamanho = tamanho \n    \n    def set_tamanho (self, numero: int) -> bool:\n        if numero%2 != 0:\n            print (\"Numero inv\u00e1lido, n\u00e3o \u00e9 permitido um valor impar!\")\n            return False\n        if numero < 20 or numero > 50:\n            print(\"Tamanho inv\u00e1lido!\")\n            return False\n        self.__tamanho = numero\n        return True\n\n    def get_tamanho (self):\n        return self.__tamanho \n\ndef main():\n    while True:\n        chinela = Chinela(0)\n        numero: int = int(input(\"Diga o tamanho da sua chinela \"))\n        if chinela.set_tamanho(numero):\n            print(\"Tamanho correto e dentro dos padr\u00f5es!\")\n            break\n    \nmain()",
             "lines": "26"
         }
     ]
