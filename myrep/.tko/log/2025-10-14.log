@@ -1,0 +1,19 @@
+2025-10-14 15:37:02, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-14 15:37:06, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100
+2025-10-14 15:37:07, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-14 15:37:16, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-14 15:37:16, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-14 15:37:18, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-14 15:37:19, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-14 15:37:20, EXEC, v:1, k:poo@camisa, mode:FREE
+2025-10-14 15:37:26, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0
+2025-10-14 15:37:27, EXEC, v:1, k:poo@camisa, mode:FREE
+2025-10-14 15:37:37, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-14 15:37:38, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-14 15:37:39, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-14 15:37:59, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-14 15:38:10, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-14 15:38:34, SELF, v:1, k:poo@relogio, rate:100, iagen:sim, alone:7, study:240
+2025-10-14 15:38:37, SELF, v:1, k:poo@roupa, rate:100, alone:10, study:40
+2025-10-14 15:38:39, SELF, v:1, k:poo@camisa, rate:100, human:sim, alone:9, study:30
+2025-10-14 15:38:43, SELF, v:1, k:poo@chinela, rate:100, human:sim, guide:sim, alone:8, study:50

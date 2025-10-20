@@ -1,0 +1,4 @@
+2025-10-13 18:20:03, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-13 18:20:08, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100
+2025-10-13 18:21:41, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:98
+2025-10-13 18:21:49, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:98
