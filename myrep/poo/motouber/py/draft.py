@@ -9,6 +9,9 @@ class Passageiro:
     def get_money (self):
         return self.__money 
     
+    def set_money (self, value: int):
+        self.__money = value
+    
     def __str__ (self):
         return f"{self.__name}:{self.__money}"
 
@@ -22,6 +25,9 @@ class Motorista:
     
     def get_dinheiro (self):
         return self.__dinheiro
+    
+    def set_dinheiro (self, value: int):
+        self.__dinheiro = value
     
     def __str__ (self):
         return f"{self.__nome}:{self.__dinheiro}"
@@ -44,7 +50,30 @@ class Moto:
             return True
     
     def drive (self, amount: int):
-        self.__custo = amount
+        self.__custo += amount
+
+    def leavePass (self):
+        if self.__passager.get_money() < self.__custo:
+            print("fail: Passenger does not have enough money")
+            self.__passager.set_money(0) 
+            dinheiro_mot = self.__driver.get_dinheiro()
+            dinheiro_mot += self.__custo
+            self.__driver.set_dinheiro(dinheiro_mot)
+            self.__custo = 0
+            print (f"{self.__passager} left")
+            self.__passager = None
+        else:
+            dinheiro_pas = self.__passager.get_money() 
+            dinheiro_mot = self.__driver.get_dinheiro()
+            custo = self.__custo
+            dinheiro_pas -= custo 
+            dinheiro_mot += self.__custo
+            self.__passager.set_money(dinheiro_pas) 
+            self.__driver.set_dinheiro(dinheiro_mot) 
+            self.__custo = 0
+            print (f"{self.__passager} left")
+            self.__passager = None
+            
 
 def main():
     moto = Moto (0, "", "")
@@ -69,6 +98,8 @@ def main():
         elif args[0] == "drive":
             amount: int = int(args[1])
             moto.drive(amount)
+        elif args[0] == "leavePass":
+            moto.leavePass()
         else:
             print("fail: comando inválido")
 
