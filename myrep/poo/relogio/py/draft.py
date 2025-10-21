@@ -20,19 +20,19 @@ class Relogio:
         if hora < 0 or hora > 23:
             print("fail: hora invalida")
         else:
-            self.__hora = int(hora)
+            self.__hora = hora
         
     def set_minuto (self, minuto: int):
         if minuto < 0 or minuto > 59:
             print("fail: minuto invalido")
         else:
-            self.__minuto = int(minuto)
+            self.__minuto = minuto
         
     def set_segundo (self, segundo: int):
         if segundo < 0 or segundo > 59:
             print("fail: segundo invalido")
         else:
-            self.__segundo = int(segundo)
+            self.__segundo = segundo
     
     def set_horainit (self, hora: int):
         if hora < 0 or hora > 23:
