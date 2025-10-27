@@ -2,8 +2,473 @@
     "patches": [
         {
             "label": "2025-10-21_19-56-01",
-            "content": "",
+            "content": "@@ -1,683 +0,0 @@\n-class Pencil:%0A    def __init__ (self, tip: str):%0A        self.__tip = None%0A    %0A    def get_tip (self):%0A        return self.__tip%0A%0A%0A%0A%0Aclass Grafite:%0A    def __init__ (self, thickness: float, hardness: str, size: int):%0A        self.__thickness = thickness%0A        self.__hardness = hardness %0A        self.__size = size%0A    %0A    def __str__ (self):%0A        return f%22grafite%22%0A%0Adef main():%0A    pencil = Pencil (%22%22)%0A    while True:%0A        line = input()%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        print (%22$%22 + line)%0A        if args%5B0%5D == %22end%22:%0A            break %0A        elif args%5B0%5D == %22show%22:%0A            print (pencil)%0A        else:%0A            print(%22fail: comando inv%C3%A1lido%22)\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-25_20-10-29",
+            "content": "@@ -680,12 +680,4 @@\n do%22)\n-%0A%0Amain()\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-25_20-10-44",
+            "content": "@@ -352,206 +352,24 @@\n     \n-if self.__thickness == 0 and self.__hardness == None and self.__size == 0:%0A            print (f%22grafite: null%22)%0A        else:%0A            return f%22%5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D\n+return f%22grafite\n %22%0A%0Ad\n@@ -406,17 +406,8 @@\n  (%22%22\n-, grafite\n )%0A  \n@@ -596,52 +596,8 @@\n w%22:%0A\n-            grafite = Grafite (0.00, %22%22, 0)%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_20-18-20",
+            "content": "@@ -586,17 +586,17 @@\n il (%22%22, \n-G\n+g\n rafite)%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_20-18-28",
+            "content": "@@ -584,16 +584,25 @@\n ncil (%22%22\n+, Grafite\n )%0A    wh\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_20-18-42",
+            "content": "@@ -127,76 +127,8 @@\n tip%0A\n-    %0A    def __str__ (self):%0A        return f%22calibre: %7Bself.__tip%7D%22\n %0A%0A%0A%0A\n@@ -841,25 +841,15 @@\n nt (\n-grafite)%0A        \n+pencil)\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_20-20-24",
+            "content": "@@ -909,16 +909,8 @@\n nt (\n-pencil, \n graf\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-25_20-21-05",
+            "content": "@@ -614,17 +614,16 @@\n .__size%7D\n-%5D\n %22%0A%0Adef m\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-25_20-21-17",
+            "content": "@@ -190,17 +190,16 @@\n f.__tip%7D\n-,\n %22%0A%0A%0A%0Acla\n@@ -927,41 +927,8 @@\n te)%0A\n-        elif args%5B0%5D == %22init%22:%0A%0A\n     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-25_20-26-51",
+            "content": "@@ -197,80 +197,8 @@\n %7D,%22%0A\n-    %0A    def set_tip (self, amount: float):%0A        self.__tip = amount%0A\n %0A%0A%0Ac\n@@ -956,24 +956,25 @@\n %22init%22:%0A\n+%0A\n         \n     amou\n@@ -969,70 +969,8 @@\n     \n-    amount: float = args%5B1%5D%0A            pencil.set_tip(amount)\n %0A   \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-25_20-29-25",
+            "content": "@@ -636,25 +636,16 @@\n eturn f%22\n-grafite: \n %5B%7Bself._\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-25_20-29-48",
+            "content": "@@ -379,20 +379,25 @@\n kness = \n-0.00\n+thickness\n %0A       \n@@ -447,17 +447,20 @@\n _size = \n-0\n+size\n %0A    %0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-25_20-31-15",
+            "content": "@@ -568,22 +568,21 @@\n         \n-return\n+print\n  (f%22graf\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-25_21-44-40",
+            "content": "@@ -485,55 +485,218 @@\n     \n-%0A            return (f%22grafite: null%22)%0A        \n+if self.__thickness == 0 and self.__hardness == None and self.__size == 0:%0A            return (f%22grafite: null%22)%0A        else:%0A            return f%22grafite: %5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D%22\n %0A%0Ade\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-25_21-44-52",
+            "content": "@@ -485,181 +485,8 @@\n     \n-if self.__thickness != 0.00 or self.__hardness != None or self.__size != 0:%0A            return f%22grafite: %5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D%22%0A        else:\n %0A   \n@@ -501,16 +501,17 @@\n  return \n+(\n f%22grafit\n@@ -518,16 +518,17 @@\n e: null%22\n+)\n %0A       \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-25_21-48-20",
+            "content": "@@ -509,19 +509,18 @@\n != 0.00 \n-and\n+or\n  self.__\n@@ -536,19 +536,18 @@\n != None \n-and\n+or\n  self.__\n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-25_21-48-44",
+            "content": "@@ -1,21 +1,20 @@\n class \n-Grafite\n+Pencil\n :%0A    de\n@@ -36,166 +36,43 @@\n f, t\n-hickness: float, hardness: str, size: int):%0A        self.__thickness = 0,3, 0,5, 0,7%0A        self.__hardness = %22HB%22, %222B%22, %224B%22, %226B%22 %0A        self.__size = 0\n+ip: str):%0A        self.__tip = None\n %0A   \n@@ -73,39 +73,39 @@\n ne%0A    %0A    def \n-__str__\n+get_tip\n  (self):%0A       \n@@ -109,228 +109,100 @@\n     \n-if self.__thickness != 0.00 and self.__hardness != None and self.__size != 0:%0A            return f%22grafite: %5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D%22%0A        else:%0A            return f%22grafite: null\n+return self.__tip%0A    %0A    def __str__ (self):%0A        return f%22calibre: %7Bself.__tip%7D,\n %22%0A    \n- \n-   \n %0A   \n@@ -210,27 +210,36 @@\n def \n-g\n+s\n et_t\n-hickness (self\n+ip (self, amount: float\n ):%0A \n@@ -245,31 +245,24 @@\n         \n-return \n self.__t\n hickness\n@@ -257,24 +257,29 @@\n .__t\n-hickness\n+ip = amount%0A%0A\n %0A%0Aclass \n Penc\n@@ -270,30 +270,31 @@\n nt%0A%0A%0A%0Aclass \n-Pencil\n+Grafite\n :%0A    def __\n@@ -300,39 +300,73 @@\n _init__ (self, t\n-ip: str\n+hickness: float, hardness: str, size: int\n ):%0A        self.\n@@ -372,349 +372,332 @@\n .__t\n-ip = None\n+hickness = 0.00\n %0A    \n-%0A\n     \n-def get_tip (self):%0A        return self.__tip%0A    %0A    def __str__ (self):%0A        return f%22calibre: %7Bself.__tip%7D,%22%0A    %0A    def set_tip (self, amount: float):%0A        self.__tip = amount%0A%0A    def insert (self, dureza: str, tamanho: int):%0A        if dureza != self.__thickness:%0A%0A        self.__thickness = dureza%0A%0A        \n+self.__hardness = hardness %0A        self.__size = 0%0A    %0A    def __str__ (self):%0A        if self.__thickness != 0.00 and self.__hardness != None and self.__size != 0:%0A            return f%22grafite: %5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D%22%0A        else:%0A            return f%22grafite: null%22\n %0A   \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-25_22-19-43",
+            "content": "@@ -879,75 +879,9 @@\n ss:%0A\n-            print (%22fail: calibre incompat%C3%ADvel%22)%0A        else:%0A    \n+%0A\n     \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-25_22-21-18",
+            "content": "@@ -811,22 +811,8 @@\n elf,\n- calibre: str,\n  dur\n@@ -847,23 +847,22 @@\n      if \n-calibre\n+dureza\n  != self\n@@ -969,23 +969,22 @@\n kness = \n-calibre\n+dureza\n %0A%0A      \n@@ -1408,183 +1408,8 @@\n nt)%0A\n-        elif args%5B0%5D == %22insert%22:%0A            calibre = args%5B1%5D%0A            dureza = args%5B2%5D%0A            tamanho = args%5B3%5D%0A            pencil.insert(calibre, dureza, tamanho)%0A\n     \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-25_22-24-00",
+            "content": "@@ -563,65 +563,10 @@\n  str\n-, thickness: float):%0A        self.__thickness = thickness\n+):\n %0A   \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-25_22-32-16",
+            "content": "@@ -1106,14 +1106,8 @@\n  (%22%22\n-, 0.00\n )%0A  \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_22-32-30",
+            "content": "@@ -987,17 +987,17 @@\n incompat\n-i\n+%C3%AD\n vel%22)%0A  \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_22-33-12",
+            "content": "@@ -782,32 +782,26 @@\n    def set_t\n-hickness\n+ip\n  (self, amou\n@@ -828,24 +828,18 @@\n self.__t\n-hickness\n+ip\n  = amoun\n@@ -947,24 +947,8 @@\n ness\n-.get_thickness()\n :%0A  \n@@ -1470,24 +1470,18 @@\n il.set_t\n-hickness\n+ip\n (amount)\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_22-36-41",
+            "content": "@@ -782,26 +782,32 @@\n    def set_t\n-ip\n+hickness\n  (self, amou\n@@ -834,18 +834,24 @@\n self.__t\n-ip\n+hickness\n  = amoun\n@@ -969,16 +969,18 @@\n hickness\n+()\n :%0A      \n@@ -1498,18 +1498,24 @@\n il.set_t\n-ip\n+hickness\n (amount)\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_22-38-33",
+            "content": "@@ -943,16 +943,30 @@\n hickness\n+.get_thickness\n :%0A      \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_22-38-54",
+            "content": "@@ -603,37 +603,33 @@\n thickness = \n-0,3, 0,5, 0,7\n+thickness\n %0A        sel\n@@ -998,27 +998,8 @@\n l%22)%0A\n-            return%0A\n     \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_22-42-27",
+            "content": "@@ -515,130 +515,8 @@\n ness\n-%0A    %0A    def get_hardness (self):%0A        return self.__hardness%0A    %0A    def get_size (self):%0A        return self.__size\n %0A%0Acl\n@@ -880,86 +880,38 @@\n re: \n-Grafite.get_thickness, dureza: Grafite.get_hardness, tamanho: Grafite.get_size\n+str, dureza: str, tamanho: int\n ):%0A \n@@ -1023,32 +1023,32 @@\n n%0A        else:%0A\n+\n             self\n@@ -1074,22 +1074,8 @@\n bre%0A\n-            %0A%0A\n %0A   \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-25_22-46-45",
+            "content": "@@ -1199,38 +1199,12 @@\n     \n-if calibre == self.__thickness\n+else\n :%0A  \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_22-47-13",
+            "content": "@@ -1130,23 +1130,24 @@\n         \n-return \n+ print (\n %22fail: c\n@@ -1166,16 +1166,17 @@\n pativel%22\n+)\n %0A       \n@@ -1168,32 +1168,42 @@\n tivel%22)%0A        \n+    return\n %0A        if cali\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_22-48-10",
+            "content": "@@ -1130,24 +1130,23 @@\n         \n- print (\n+return \n %22fail: c\n@@ -1165,17 +1165,16 @@\n pativel%22\n-)\n %0A       \n@@ -1174,26 +1174,16 @@\n         \n-    return\n %0A       \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_22-48-23",
+            "content": "@@ -908,32 +908,26 @@\n    def set_t\n-hickness\n+ip\n  (self, amou\n@@ -954,24 +954,18 @@\n self.__t\n-hickness\n+ip\n  = amoun\n@@ -1703,24 +1703,18 @@\n il.set_t\n-hickness\n+ip\n (amount)\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_22-49-08",
+            "content": "@@ -729,25 +729,29 @@\n kness = \n-thickness\n+0,3, 0,5, 0,7\n %0A       \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_22-49-26",
+            "content": "@@ -760,19 +760,20 @@\n __tip = \n-tip\n+None\n %0A    %0A  \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_22-49-39",
+            "content": "@@ -743,24 +743,40 @@\n ess%0A        \n+self.__tip = tip\n %0A    %0A    de\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_22-50-03",
+            "content": "@@ -751,24 +751,8 @@\n     \n-self.__tip = tip\n %0A   \n@@ -867,24 +867,18 @@\n self.__t\n-hickness\n+ip\n %7D,%22%0A    \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_22-50-20",
+            "content": "@@ -105,19 +105,28 @@\n ness = 0\n-.00\n+,3, 0,5, 0,7\n %0A       \n@@ -637,94 +637,8 @@\n size\n-%0A    %0A    def set_thickness (self, calibre: float):%0A        self.__thickness = calibre\n %0A%0Acl\n@@ -1251,26 +1251,16 @@\n         \n- calibre =\n  self.__\n@@ -1272,60 +1272,18 @@\n ness\n-%0A            self.__thickness.set_thickness(\n+ = \n calibre\n-)\n %0A   \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_22-54-35",
+            "content": "@@ -1368,23 +1368,32 @@\n         \n-Grafite\n+self.__thickness\n .set_thi\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-25_23-25-19",
+            "content": "@@ -1390,16 +1390,23 @@\n ickness(\n+calibre\n )%0A      \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-25_23-26-10",
+            "content": "@@ -1083,16 +1083,19 @@\n lf, cali\n+bre\n : Grafit\n@@ -1184,16 +1184,19 @@\n  if cali\n+bre\n  != self\n@@ -1292,16 +1292,19 @@\n  if cali\n+bre\n  == self\n@@ -1333,16 +1333,19 @@\n     cali\n+bre\n  = self.\n@@ -1390,20 +1390,16 @@\n ickness(\n-cali\n )%0A      \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-25_23-27-10",
+            "content": "@@ -1083,19 +1083,16 @@\n lf, cali\n-bre\n : Grafit\n@@ -1181,19 +1181,16 @@\n  if cali\n-bre\n  != self\n@@ -1286,19 +1286,16 @@\n  if cali\n-bre\n  == self\n@@ -1324,19 +1324,16 @@\n     cali\n-bre\n  = self.\n@@ -1378,29 +1378,20 @@\n ickness(\n-self, \n cali\n-bre\n )%0A      \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-25_23-27-33",
+            "content": "@@ -1754,35 +1754,8 @@\n te)%0A\n-            print(Grafite)%0A\n     \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-25_23-27-55",
+            "content": "@@ -1768,17 +1768,17 @@\n   print(\n-g\n+G\n rafite)%0A\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-25_23-28-08",
+            "content": "@@ -1742,32 +1742,59 @@\n encil, grafite)%0A\n+            print(grafite)%0A\n         elif arg\n@@ -2065,35 +2065,8 @@\n ho)%0A\n-            print(grafite)%0A\n     \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-25_23-29-01",
+            "content": "@@ -248,18 +248,19 @@\n != 0.00 \n-or\n+and\n  self.__\n@@ -280,10 +280,11 @@\n one \n-or\n+and\n  sel\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-25_23-29-24",
+            "content": "@@ -136,16 +136,36 @@\n ness = %22\n+HB%22, %222B%22, %224B%22, %226B\n %22 %0A     \n@@ -248,19 +248,18 @@\n != 0.00 \n-and\n+or\n  self.__\n@@ -275,19 +275,18 @@\n != None \n-and\n+or\n  self.__\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-25_23-30-00",
+            "content": "@@ -694,162 +694,8 @@\n ibre\n-%0A    %0A    def set_hardness (self, dureza: float):%0A        self.__hardness = dureza%0A%0A    def set_size (self, tamanho: float):%0A        self.__size = tamanho\n %0A%0Acl\n@@ -1389,127 +1389,8 @@\n re)%0A\n-            Grafite.set_hardness(self, dureza)%0A            Grafite.set_size(self, tamanho)%0A            return%0A        %0A\n     \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-25_23-32-39",
+            "content": "@@ -1217,23 +1217,94 @@\n lf, \n-grafite: Grafit\n+calibre: Grafite.get_thickness, dureza: Grafite.get_hardness, tamanho: Grafite.get_siz\n e):%0A\n@@ -1314,22 +1314,22 @@\n      if \n-grafit\n+calibr\n e != sel\n@@ -1411,36 +1411,62 @@\n  return%0A        \n-else\n+if calibre == self.__thickness\n :%0A            se\n@@ -1458,24 +1458,34 @@\n %0A           \n+ calibre =\n  self.__thic\n@@ -1493,18 +1493,148 @@\n ness\n- = grafite\n+%0A            Grafite.set_thickness(self, calibre)%0A            Grafite.set_hardness(self, dureza)%0A            Grafite.set_size(self, tamanho)\n %0A   \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_23-34-39",
+            "content": "@@ -1925,23 +1925,82 @@\n     \n-grafite\n+calibre = args%5B1%5D%0A            dureza = args%5B2%5D%0A            tamanho\n  = args%5B\n 1%5D%0A \n@@ -1987,33 +1987,33 @@\n  tamanho = args%5B\n-1\n+3\n %5D%0A            pe\n@@ -2024,16 +2024,60 @@\n .insert(\n+calibre, dureza, tamanho)%0A            print(\n grafite)\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-25_23-35-11",
+            "content": "@@ -100,33 +100,28 @@\n thickness = \n-thickness\n+0.00\n %0A        sel\n@@ -135,24 +135,19 @@\n dness = \n-hardness\n+%22%22 \n %0A       \n@@ -161,20 +161,17 @@\n _size = \n-size\n+0\n %0A    %0A  \n@@ -875,32 +875,42 @@\n  __init__ (self,\n+ tip: str,\n  thickness: floa\n@@ -971,20 +971,19 @@\n __tip = \n-None\n+tip\n %0A    %0A  \n@@ -1254,24 +1254,8 @@\n fite\n-.get_thickness()\n  != \n@@ -1374,18 +1374,24 @@\n self.__t\n-ip\n+hickness\n  = grafi\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-25_23-43-53",
+            "content": "@@ -1939,152 +1939,25 @@\n     \n-calibre = float(args%5B1%5D)%0A            dureza = args%5B2%5D%0A            tamanho = int(args%5B3%5D)%0A            grafite = Grafite(calibre, dureza, tamanho)\n+grafite = args%5B1%5D\n %0A   \n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-25_23-44-52",
+            "content": "@@ -1502,16 +1502,20 @@\n Pencil (\n+%22%22, \n 0.00)%0A  \n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-25_23-45-34",
+            "content": "@@ -197,32 +197,122 @@\n __str__ (self):%0A\n+        if self.__thickness != 0.00 and self.__hardness != None and self.__size != 0:%0A    \n         return f\n@@ -375,16 +375,66 @@\n size%7D%5D%22%0A\n+        else:%0A            return f%22grafite: null%22%0A\n         \n@@ -1054,24 +1054,25 @@\n  __str__\n+ \n (self):%0A\n         \n@@ -1067,44 +1067,8 @@\n f):%0A\n-        if self.__tip  == None:%0A    \n     \n@@ -1112,100 +1112,8 @@\n ss%7D,\n- grafite: null%22%0A        else:%0A            return f%22calibre: %7Bself.__thickness%7D, %7Bself.__tip%7D\n %22%0A  \n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-25_23-48-18",
+            "content": "@@ -172,24 +172,133 @@\n size = size%0A\n+    %0A    def __str__ (self):%0A        return f%22grafite: %5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D%22%0A\n         %0A   \n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-25_23-49-14",
+            "content": "@@ -1643,16 +1643,25 @@\n  (pencil\n+, grafite\n )%0A      \n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-25_23-49-34",
+            "content": "@@ -180,257 +180,8 @@\n ize%0A\n-    %0A    def __str__ (self):%0A        if self.__thickness != 0.00 and self.__hardness != None and self.__size != 0:%0A            return f%22grafite: %5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D%22%0A        else:%0A            return f%22grafite: null%22%0A\n     \n@@ -181,24 +181,24 @@\n ze%0A        %0A\n+\n     def get_\n@@ -908,10 +908,12 @@\n te: \n-%5B%5D\n+null\n %22%0A  \n@@ -1618,16 +1618,16 @@\n  %22%22, 0)%0A\n+\n         \n@@ -1643,25 +1643,16 @@\n  (pencil\n-, grafite\n )%0A      \n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-25_23-50-54",
+            "content": "@@ -1054,32 +1054,64 @@\n  __str__(self):%0A\n+        if self.__tip  == None:%0A\n             retu\n@@ -1143,16 +1143,106 @@\n ckness%7D,\n+ grafite: %5B%5D%22%0A        else:%0A            return f%22calibre: %7Bself.__thickness%7D, %7Bself.__tip%7D\n %22%0A    %0A \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_23-51-31",
+            "content": "@@ -1224,68 +1224,61 @@\n lf, \n-calibre: int, dureza: str, tamanho, int):%0A        if calibre\n+grafite: Grafite):%0A        if grafite.get_thickness()\n  != \n@@ -1393,117 +1393,47 @@\n     \n-Grafite.set_thickness(calibre)%0A            Grafite.set_hardness(dureza)%0A            Grafite.set_size(tamanho)\n+self.__tip = grafite%0A            return\n %0A   \n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-25_23-59-14",
+            "content": "@@ -2186,32 +2186,15 @@\n ert(\n-calibre, dureza, tamanho\n+grafite\n )%0A  \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-25_23-59-33",
+            "content": "@@ -1229,20 +1229,18 @@\n alibre: \n-floa\n+in\n t, durez\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_00-00-47",
+            "content": "@@ -1390,64 +1390,8 @@\n se:%0A\n-            grafite = Grafite(calibre, dureza, tamanho)%0A\n     \n@@ -1512,41 +1512,8 @@\n ho)%0A\n-            self.__tip = grafite%0A\n     \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_00-01-45",
+            "content": "@@ -1256,17 +1256,17 @@\n  tamanho\n-:\n+,\n  int):%0A \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_00-02-24",
+            "content": "@@ -1384,38 +1384,12 @@\n     \n-if calibre == self.__thickness\n+else\n :%0A  \n@@ -1601,34 +1601,24 @@\n ite%0A        \n-    return\n %0A           \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_00-02-58",
+            "content": "@@ -1375,14 +1375,8 @@\n turn\n- False\n %0A   \n@@ -1641,21 +1641,16 @@\n   return\n- True\n %0A       \n@@ -2033,33 +2033,33 @@\n   amount\n- =\n+:\n  float\n-(\n+ = \n args%5B1%5D\n-)\n %0A       \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_00-05-16",
+            "content": "@@ -1478,33 +1478,33 @@\n ho)%0A            \n-g\n+G\n rafite.set_thick\n@@ -1521,33 +1521,33 @@\n re)%0A            \n-g\n+G\n rafite.set_hardn\n@@ -1566,25 +1566,25 @@\n             \n-g\n+G\n rafite.set_s\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_00-06-23",
+            "content": "@@ -1914,16 +1914,60 @@\n %22show%22:%0A\n+            grafite = Grafite (0.00, %22%22, 0)%0A\n         \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_00-07-15",
+            "content": "@@ -1939,16 +1939,25 @@\n  (pencil\n+, grafite\n )%0A      \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-26_00-07-56",
+            "content": "@@ -1115,30 +1115,8 @@\n ss%7D,\n- grafite: %7Bself.__tip%7D\n %22%0A  \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-26_00-08-18",
+            "content": "@@ -213,33 +213,92 @@\n         \n-def __str__(self)\n+if self.__thickness != 0.00 and self.__hardness != None and self.__size != 0\n :%0A      \n@@ -312,16 +312,25 @@\n eturn f%22\n+grafite: \n %5B%7Bself._\n@@ -375,16 +375,66 @@\n size%7D%5D%22%0A\n+        else:%0A            return f%22grafite: null%22%0A\n         \n@@ -1066,118 +1066,8 @@\n f):%0A\n-        if self.__tip is None:%0A            return f%22calibre: %7Bself.__thickness%7D, grafite: null%22%0A        else:%0A\n     \n@@ -1452,26 +1452,23 @@\n         \n-self.__tip\n+grafite\n  = Grafi\n@@ -1488,32 +1488,187 @@\n ureza, tamanho)%0A\n+            grafite.set_thickness(calibre)%0A            grafite.set_hardness(dureza)%0A            grafite.set_size(tamanho)%0A            self.__tip = grafite%0A\n             retu\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-26_00-11-04",
+            "content": "@@ -173,32 +173,60 @@\n ize = size%0A    %0A\n+    def __str__ (self):%0A    \n     def __str__(\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_00-11-49",
+            "content": "@@ -938,18 +938,18 @@\n f.__tip \n-==\n+is\n  None:%0A \n@@ -1487,16 +1487,31 @@\n rn True%0A\n+            %0A%0A%0A\n         \n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-26_00-12-50",
+            "content": "@@ -1368,84 +1368,8 @@\n lse%0A\n-        if self.__tip != None:%0A            print(%22fail: ja existe grafite%22)%0A\n     \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-26_00-14-11",
+            "content": "@@ -1444,33 +1444,8 @@\n e%22)%0A\n-            return False%0A\n     \n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-26_00-14-37",
+            "content": "@@ -1601,153 +1601,8 @@\n    %0A\n-    def remove (self):%0A        if self.__tip == None:%0A            print (%22n%C3%A3o tem grafite%22)%0A        else:%0A            self.__tip = None%0A        %0A\n     \n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-26_00-15-45",
+            "content": "@@ -2362,70 +2362,8 @@\n ho)%0A\n-        elif args%5B0%5D == %22remove%22:%0A            pencil.remove()%0A\n     \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-26_00-16-15",
+            "content": "@@ -1737,115 +1737,8 @@\n one%0A\n-        %0A    def write (self):%0A        if self.__tip == None:%0A            print (%22fail: nao tem grafite%22)%0A%0A\n     \n@@ -2424,68 +2424,8 @@\n e()%0A\n-        elif args%5B0%5D == %22write%22:%0A            pencil.write()%0A\n     \n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-26_00-18-23",
+            "content": "@@ -1825,22 +1825,19 @@\n il: nao \n-exis\n te\n+m\n  grafite\n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-26_00-18-36",
+            "content": "@@ -717,388 +717,8 @@\n ho%0A%0A\n-    def usagePerSheet (self):%0A        if self.__hardness == %22HB%22:%0A            self.__size -= 1%0A            return%0A        if self.__hardness == %222B%22:%0A            self.__size -= 2%0A            return %0A        if self.__hardness == %224B%22:%0A            self.__size -= 4%0A            return %0A        if self.__hardness == %226B%22:%0A            self.__size -= 6%0A            return %0A        %0A%0A%0A\n clas\n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-26_19-36-12",
+            "content": "@@ -2225,118 +2225,8 @@\n te%22)\n-%0A            return%0A        if self.__tip.get_size %3C= 10:%0A            print (%22fail: tamanho insuficiente%22)    \n %0A%0A  \n",
+            "lines": "111"
+        },
+        {
+            "label": "2025-10-26_19-38-50",
+            "content": "@@ -2272,17 +2272,17 @@\n et_size \n-=\n+%3C\n = 10:%0A  \n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-10-26_19-39-12",
+            "content": "@@ -2148,43 +2148,8 @@\n f):%0A\n-        self.__tip.usagePerSheet()%0A\n     \n@@ -2331,36 +2331,16 @@\n te%22)    \n-%0A            self.__\n %0A%0A      \n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-10-26_19-41-01",
+            "content": "@@ -1082,18 +1082,16 @@\n return %0A\n-%0A%0A\n         \n@@ -1091,16 +1091,18 @@\n        %0A\n+%0A%0A\n class Pe\n@@ -1277,87 +1277,8 @@\n    %0A\n-    def hasGrafite (self):%0A        self.__tip != None%0A        return True%0A    %0A\n     \n@@ -2156,26 +2156,56 @@\n     \n-if \n self.\n-hasGrafite\n+__tip.usagePerSheet()%0A        if self.__tip\n  == \n",
+            "lines": "116"
+        },
+        {
+            "label": "2025-10-26_19-49-56",
+            "content": "@@ -2337,109 +2337,30 @@\n     \n-%0A        gasto = self.__tip.usagePerSheet()%0A        tamanho = self.__tip.get_size%0A%0A        if tamanho\n+if self.__tip.get_size\n  == \n@@ -2428,22 +2428,23 @@\n         \n-return\n+self.__\n %0A%0A      \n",
+            "lines": "119"
+        },
+        {
+            "label": "2025-10-26_19-53-20",
+            "content": "@@ -2231,37 +2231,42 @@\n         if self.\n-__tip\n+hasGrafite\n  == None:%0A      \n",
+            "lines": "123"
+        },
+        {
+            "label": "2025-10-26_19-59-20",
+            "content": "@@ -2409,18 +2409,16 @@\n get_size\n-()\n %0A%0A      \n@@ -2509,26 +2509,16 @@\n  return%0A\n-        %0A%0A\n %0A       \n",
+            "lines": "123"
+        },
+        {
+            "label": "2025-10-26_20-02-52",
+            "content": "@@ -2333,30 +2333,28 @@\n    %0A        \n-tamanh\n+gast\n o = self.__t\n@@ -2356,24 +2356,29 @@\n f.__tip.\n-get_size\n+usagePerSheet\n ()%0A     \n@@ -2372,36 +2372,38 @@\n Sheet()%0A        \n-gast\n+tamanh\n o = self.__tip.u\n@@ -2401,29 +2401,24 @@\n f.__tip.\n-usagePerSheet\n+get_size\n ()%0A%0A    \n",
+            "lines": "125"
+        },
+        {
+            "label": "2025-10-26_20-04-29",
+            "content": "@@ -808,16 +808,35 @@\n ze -= 1%0A\n+            return%0A\n         \n@@ -859,24 +859,24 @@\n ss == %222B%22:%0A\n-\n             \n@@ -892,16 +892,36 @@\n ze -= 2%0A\n+            return %0A\n         \n@@ -977,16 +977,36 @@\n ze -= 4%0A\n+            return %0A\n         \n@@ -1029,24 +1029,24 @@\n ss == %226B%22:%0A\n-\n             \n@@ -1062,16 +1062,36 @@\n ze -= 6%0A\n+            return %0A\n %0A%0A      \n",
+            "lines": "125"
+        },
+        {
+            "label": "2025-10-26_20-08-54",
+            "content": "@@ -1003,16 +1003,18 @@\n ze -= 6%0A\n+%0A%0A\n         \n@@ -2289,16 +2289,59 @@\n t_size()\n+%0A        gasto = self.__tip.usagePerSheet()\n %0A%0A      \n@@ -2445,43 +2445,8 @@\n    %0A\n-        self.__tip.usagePerSheet()%0A\n %0A%0A  \n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-10-26_20-09-30",
+            "content": "@@ -2247,32 +2247,42 @@\n         %0A       \n+ tamanho =\n  self.__tip.get_\n@@ -2300,37 +2300,23 @@\n      if \n-self.__tip.get_size()\n+tamanho\n  == 10:%0A\n@@ -2396,17 +2396,16 @@\n        %0A\n-%0A\n         \n",
+            "lines": "119"
+        },
+        {
+            "label": "2025-10-26_20-10-45",
+            "content": "@@ -2255,26 +2255,16 @@\n %0A       \n- tamanho =\n  self.__\n@@ -2290,23 +2290,37 @@\n      if \n-tamanho\n+self.__tip.get_size()\n  == 10:%0A\n@@ -2404,23 +2404,16 @@\n    %0A\n- \n+%0A\n        \n-gasto =\n  sel\n@@ -2440,192 +2440,8 @@\n t()%0A\n-        tamanhoUsado = tamanho - gasto %0A%0A        if tamanhoUsado %3C 10:%0A            self.__tip.set_size(10)%0A            print (%22fail: folha imconpleta%22)%0A            return%0A            %0A\n %0A%0A  \n",
+            "lines": "120"
+        },
+        {
+            "label": "2025-10-26_20-14-32",
+            "content": "@@ -812,29 +812,8 @@\n = 1%0A\n-            return 1%0A\n     \n@@ -877,29 +877,8 @@\n = 2%0A\n-            return 2%0A\n     \n",
+            "lines": "126"
+        },
+        {
+            "label": "2025-10-26_20-18-23",
+            "content": "@@ -984,29 +984,8 @@\n = 4%0A\n-            return 4%0A\n     \n@@ -1049,29 +1049,8 @@\n = 6%0A\n-            return 6%0A\n     \n",
+            "lines": "128"
+        },
+        {
+            "label": "2025-10-26_20-20-53",
+            "content": "@@ -2663,20 +2663,20 @@\n  folha i\n-ncom\n+mcon\n pleta%22)%0A\n",
+            "lines": "130"
+        },
+        {
+            "label": "2025-10-26_20-21-29",
+            "content": "@@ -2693,16 +2693,49 @@\n   return\n+%0A            %0A%0A%0A        %0A        \n %0A%0Adef ma\n",
+            "lines": "130"
+        },
+        {
+            "label": "2025-10-26_20-28-29",
+            "content": "class Grafite:\n    def __init__ (self, thickness: float, hardness: str, size: int):\n        self.__thickness = thickness\n        self.__hardness = hardness\n        self.__size = size\n    \n    def __str__(self):\n            return f\"[{self.__thickness}:{self.__hardness}:{self.__size}]\"\n        \n    def get_thickness (self):\n        return self.__thickness\n    \n    def get_hardness (self):\n        return self.__hardness\n    \n    def get_size (self):\n        return self.__size\n    \n    def set_thickness (self, calibre: float):\n        self.__thickness = calibre\n    \n    def set_hardness (self, dureza: float):\n        self.__hardness = dureza\n\n    def set_size (self, tamanho: float):\n        self.__size = tamanho\n\n    def usagePerSheet (self):\n        if self.__hardness == \"HB\":\n            self.__size -= 1\n            return 1\n        if self.__hardness == \"2B\":\n            self.__size -= 2\n            return 2\n        if self.__hardness == \"4B\":\n            self.__size -= 4\n            return 4\n        if self.__hardness == \"6B\":\n            self.__size -= 6\n            return 6\n        \nclass Pencil:\n    def __init__ (self, thickness: float):\n        self.__thickness = thickness\n        self.__tip = None\n    \n    def get_tip (self):\n        return self.__tip\n    \n    def hasGrafite (self):\n        self.__tip != None\n        return True\n    \n    def __str__(self):\n        if self.__tip == None:\n            return f\"calibre: {self.__thickness}, grafite: null\"\n        else:\n            return f\"calibre: {self.__thickness}, grafite: {self.__tip}\"\n    \n    def set_thickness (self, amount: float):\n        self.__thickness = amount\n\n    def insert (self, calibre: float, dureza: str, tamanho: int):\n        if calibre != self.__thickness:\n            print (\"fail: calibre incompativel\")\n            return False\n        if self.__tip != None:\n            print(\"fail: ja existe grafite\")\n            return False\n        if calibre == self.__thickness:\n            self.__tip = Grafite(calibre, dureza, tamanho)\n            return True\n        \n    def remove (self):\n        if self.__tip == None:\n            print (\"n\u00e3o tem grafite\")\n        else:\n            self.__tip = None\n        \n    def write (self):\n        if self.__tip == None:\n            print (\"fail: nao existe grafite\")\n            return\n        \n        tamanho = self.__tip.get_size()\n\n        if tamanho == 10:\n            print (\"fail: tamanho insuficiente\")    \n            return\n        \n        gasto = self.__tip.usagePerSheet()\n        tamanhoUsado = tamanho - gasto \n\n        if tamanhoUsado < 10:\n            self.__tip.set_size(10)\n            print (\"fail: folha incompleta\")\n            return\n\ndef main():\n    pencil = Pencil (0.00)\n    while True:\n        line = input()\n        args: list[str] = line.split(\" \")\n        print (\"$\" + line)\n        if args[0] == \"end\":\n            break \n        elif args[0] == \"show\":\n            print (pencil)\n        elif args[0] == \"init\":\n            amount = float(args[1])\n            pencil.set_thickness(amount)\n        elif args[0] == \"insert\":\n            calibre = float(args[1])\n            dureza = args[2]\n            tamanho = int(args[3])\n            grafite = Grafite(calibre, dureza, tamanho)\n            pencil.insert(calibre, dureza, tamanho)\n        elif args[0] == \"remove\":\n            pencil.remove()\n        elif args[0] == \"write\":\n            pencil.write()\n        else:\n            print(\"fail: comando inv\u00e1lido\")\n\nmain()",
+            "lines": "125"
         }
     ]
 }
